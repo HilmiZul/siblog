@@ -1,2 +1,2 @@
 # SIBLOG
-Build a Simple Blog using Django
+...or call Simple Blog. Based on Django. SIBLOG help you to build a website like a personal blog.
