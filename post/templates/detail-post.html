@@ -1,0 +1,49 @@
+{% extends "layout/base.html" %}
+{% block content %}  
+  <!-- POST: STATIC/DYN -->
+  <section class="static">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="static-inner">
+            <div class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/posts/">Article</a></li>
+              <li><a href="/category/{{ post.category_id }}">{{ post.category }}</a></li>
+            </div>
+            <h2>{{ post.title }}</h2>
+            <div class="time">{{ post.date_post }}</div>
+            <a href="/category/{{ post.category_id }}" class="btn btn-primary"><i class="fa fa-tag"></i> {{ post.category }}</a>
+            <div class="img"><img src="{{ post.feature_image.url }}" class="img-feature"></div>
+            <div class="content">
+              {{ post.content | safe }}
+            </div>
+            <div class="share">
+              <h4>Share</h4>
+              <a href="#" class="btn btn-social-icon btn-twitter btn-lg">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-social-icon btn-facebook btn-lg">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-social-icon btn-google-plus btn-lg">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <img src="/static/img/zulhilmi" class="img-circle img">
+            </div>
+            <div class="col-md-9">
+              <h3>{{ post.postman }}</h3>
+              <p><a href="{{ profile.website }}" target="_blank">{{ profile.website }}</a></p>
+              <p>{{ profile.biodata }}</p>
+            </div>
+          </div>
+        </div>
+        {% include "layout/sidebar.html" %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

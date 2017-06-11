@@ -1,0 +1,257 @@
+/* 
+ * bs-custom.css
+ * 22 Maret 2k17
+ * Twitter Bootstrap & Social Buttons Custom 
+ * customized by: LAP[i]S for SIBLOG :D
+ */
+ 
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+  min-height: 55px;
+  border: none;
+  background-color: #006479;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 4px solid #fff;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #e7e7e7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-link {
+  color: #777;
+}
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+.navbar-default .btn-link {
+  color: #777;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu > li > a {
+  line-height: 25px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #efefef;
+}
+
+.panel,
+.panel-heading {
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Buttons */
+
+/* ------------------------------- */
+
+.btn {
+  border-radius: 0;
+}
+
+ .btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .2s;
+}
+
+.btn-primary.btn-outline {
+  color: #428bca;
+}
+
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
+}
+
+.form-control {
+  height: 40px;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #006479;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .modal-content {
+  border-radius: 0;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 30%;
+}
+
+.alert  {
+  border-radius: 0;
+} 
+
+.breadcrumb {
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: transparent;
+}
+
+.breadcrumb li > a {
+  color: #006479;
+}
+
+.pagination > li > a {
+  color: #5f5f5f;
+  padding: 15px 20px 15px 20px;
+  font-size: 17px;
+  transition: all .2s;
+}
+
+.pagination > li > a:hover, 
+.pagination > li > a:focus {
+  color: #006479;
+  border: 1px solid #006479;
+  background-color: #fff;
+  transition: all .2s;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #006479;
+  border-color: #006479;
+}
+
+.btn-twitter, .btn-facebook, .btn-google-plus {
+  background-color: #afafaf;
+  transition: all .2s;
+}

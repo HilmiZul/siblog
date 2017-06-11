@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post &#8212; SIBLOG</title>
+  {% load staticfiles %}
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/font-awesome/css/fa.min.css' %}" rel="stylesheet">
+  <style>
+  .well {
+    margin-top: 50px;
+  }
+  .well .img {
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="text-center">Ada {{ count_post }} kiriman</div>
+      {% for list_post in post %}
+        <div class="col-md-3">
+          <div class="well">
+            <img src="/static/img/{{ list_post.feature_image }}" class="img">
+            <h4><a href="/post/{{ list_post.id }}">{{ list_post.title }}</a></h4>
+            <p>{{ list_post.date_post }} oleh {{ list_post.postman }}</p>
+            <a class="btn btn-info" href="/post/{{ list_post.id }}">read more</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="{% static 'vendor/js/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% extends "layout/base.html" %}
+{% load posts_helper %}
+{% block content %}
+  <!-- HEADER -->
+  <section class="header category">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h1>Articles by Category</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ARTICLES -->
+  <section class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Articles in <span class="primary-text">{{ get_cat.nama }}</span></h2>
+        </div>
+        <div class="col-md-12">
+          <div class="more">
+            <form>
+              <input type="text" class="form-control" placeholder="Search article...">
+            </form>
+          </div>
+        </div>
+        <!-- ARTCILE LOOP -->
+        {% for post in posts_in_cat %}
+        <div class="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-body">
+              <a href="/post/{{ post.id }}"><img src="{{ post.feature_image.url }}" class="img"></a>
+              <div class="category"><a href="/category/{{ post.category_id }}">{{ post.category }}</a></div>
+              <h4><a href="/post/{{ post.id }}">{{ post.title }}</a></h4>
+            </div>
+            <div class="panel-footer">
+              <div class="author"><a href="#">{{ post.postman }}</a></div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- END ARTICLE LOOP -->
+        
+        <!-- PAGINATION -->
+        <div class="col-md-12">
+          <div class="text-center">
+            <div class="pagination">
+              {% if posts_in_cat.has_previous %}
+              <li><a href="?page={{ posts_in_cat.previous_page_number }}">&laquo;</a></li>
+              {% endif %}
+              <li class="active"><a>{{ posts_in_cat.number }}</a></li>
+              {% if posts_in_cat.has_next %}
+              <li><a href="?page={{ posts_in_cat.next_page_number }}">&raquo;</a></li>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <!-- END PAGINATION -->
+      </div>
+    </div>
+  </section>
+{% endblock %}

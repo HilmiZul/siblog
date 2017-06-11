@@ -1,0 +1,293 @@
+/*
+ * lapis.css
+ * theme for SIBLOG
+ * @author: zul hilmi
+ * 22 Maret 2k17, 23:20
+ * 
+ * primary color: #006479
+ * base color: #f9f9f9;
+ * secondary color: #1f1f1f;
+ * 
+ */
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../vendor/fonts/OpenSans.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: OpenSans;
+  background-color: #efefef;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.primary-text {
+  color: #006479;
+  font-weight: bold;
+}
+
+.header {
+  width: 100%;
+  height: 350px;
+  color: #dfdfdf; 
+  padding: 130px 0 90px 0;
+  background-color: #1f1f1f;
+}
+
+.more {
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+
+.more .btn {
+  width: 100%;
+}
+
+.article .more .form-control {
+  margin-bottom: 20px;
+}
+
+.article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.article h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+}
+
+.article .col-md-3 {
+  margin-bottom: 20px;
+}
+
+.article .panel {
+  margin-bottom: 20px;
+}
+
+.article .panel.panel-primary {
+  border: 0;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+}
+
+.article .panel.panel-primary .panel-body {
+  padding: 0;
+}
+
+.article .img {
+  width: 100%;
+}
+
+.article .category {
+  color: #7f7f7f;
+  padding: 10px 0 0 10px;
+  margin-top: 7px;
+}
+
+.article h4 {
+  padding: 0 0 70px 10px;
+  height: 100px;
+}
+
+.article .author {
+  color: #7f7f7f;
+}
+
+.static {
+  margin: 20px 0 0 0;
+  padding-top: 90px;
+}
+
+.static .static-inner {
+  height: 100%;
+  border-top: 3px solid #006479;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+}
+
+.static .static-inner .img {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.static .static-inner .img .img-feature {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.static .static-inner h2 {
+  margin-top: 0;
+  font-weight: bold;
+  padding: 20px 20px 0 20px;
+}
+
+.static .static-inner .time {
+  color: #9f9f9f;
+  font-size: 15px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 20px;
+}
+
+.static .static-inner .btn.btn-primary {
+  border: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  background-color: #006479;
+}
+
+.static .static-inner .content {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 0 20px 50px 20px;
+}
+
+.static .static-inner .share {
+  padding: 10px 20px 20px 20px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.static .static-inner .share .btn {
+  border: 0;
+}
+
+.static .col-md-12 {
+  padding: 20px 0 20px 0;
+  margin-bottom: 50px;
+  border-top: 1px solid #dfdfdf;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, .175);
+}
+
+.static .col-md-12 .col-md-3 .img {
+  width: 100%;
+}
+
+.static .col-md-12 .col-md-9 h3 {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.static .col-md-12 .col-md-9 p {
+  color: #7f7f7f;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.static .col-md-8 {
+  margin-bottom: 50px;
+}
+
+.static h3 {
+  margin: 0 0 30px 0;
+}
+
+.static .col-md-4 {
+  margin-bottom: 50px;
+}
+
+.static .item {
+  padding: 5px;
+  font-size: 13px;
+  line-height: 50px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.static .item:hover {
+  border-bottom-color: #006479;
+}
+
+.static .item .item-no {
+  float: left;
+  width: 50px;
+  height: 50px;
+  color: #7f7f7f;
+  font-size: 13px;
+  margin-right: 10px;
+  background-color: #fafafa;
+  text-align: center;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  
+}
+
+.static .item.item-color {
+  background-color: #f3f3f3;
+}
+
+.static .item > a {
+  color: #7f7f7f;
+}
+
+.static .item > a:hover {
+  color: #9a9a9a;
+}
+
+.header.search {
+  background: url('../img/tik.jpg') no-repeat center center;
+  display: block;
+  background-size: cover;
+}
+
+.header.category {
+  background: url('../img/category.jpg') no-repeat center center;
+  display: block;
+  background-size: cover;
+}
+
+.article .more .btn.btn-default {
+  border-width: 2px;
+}
+
+.article .more .btn.btn-default:hover {
+  color: #006479;
+  border-color: #006479;
+  background-color: transparent;
+}
+
+.footer {
+  padding: 30px;
+  border-top: 1px solid #dfdfdf;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
