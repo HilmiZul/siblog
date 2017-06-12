@@ -1,4 +1,6 @@
 # SIBLOG
-...or call Simple Blog. Based on Django. SIBLOG help you to build a website like a personal blog.
-
-Loading...
+Kependekan dari Simple Blog. Berbasis Django. SIBLOG membantu untuk membangun sebuah website seperti personal blog yang meliputi:
+* Pengelolaan halaman statis/dinamis
+* Pengelolaan kategori
+* Pengelolaan navigasi menu
+* Pengelolaan pengaturan umum website
