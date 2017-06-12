@@ -12,7 +12,8 @@ Kependekan dari Simple Blog. Berbasis Django. SIBLOG membantu untuk membangun se
 ## Instalasi
 * Download siblog-master.zip
 * Buat folder **django/** di **~/** menjadi **~/django/**
-* Ekstrak master.zip ke folder **django/**
-* Buka terminal dan pindah direktori ke **~/django/master/**. `$ cd ~/django/master`
-* Dan jalankan dengan `./manage runserver`
+* Ekstrak siblog-master.zip ke folder **django/**
+* Buka terminal dan pindah direktori ke **~/django/sblog-master/**. `$ cd ~/django/siblog-master`
+* `./manage.py makemigrations && ./manage.py migrate`
+* Jalankan **siblog**-nya dengan `./manage.py runserver`
 * Buka web browser. `http://localhost:8000`
